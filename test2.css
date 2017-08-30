@@ -47,7 +47,7 @@
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-.c25, .c9, .c5, .c30, .c11, .c15{
+body{
 	width:60%;
 	margin:auto;
 	text-align:center;
