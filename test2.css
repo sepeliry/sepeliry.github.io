@@ -57,5 +57,17 @@ html{
 	background-color:#E0E0E0;
 }
 .vara{
-		text-align:left;
+	text-align:left;
+}
+
+div.logo_container {
+  display:table;
+  text-align:center;
+  margin-right: auto;
+  margin-left: auto;
+}
+div.logo-image {
+     vertical-align: top;
+     display: table-cell;
+	 padding: 10px;
 }
