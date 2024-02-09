@@ -12,9 +12,7 @@ function l { # Log a message to the terminal.
 gh repo clone sepeliry/point-and-click-homepage ./source
 
 # Define source and target directories (note: target is already cloned in the Action job)
-# DEBUG: Try with 'LICENSE' file first
-readonly SOURCE_DIR=./source
-#readonly SOURCE_DIR=./source/deployment
+readonly SOURCE_DIR=./source/deployment
 readonly TARGET_DIR=./target/beta
 
 # First check that 'deployment' folder exists in source repository
@@ -25,9 +23,7 @@ if [ -d "$SOURCE_DIR" ]; then
     
     # Copy contents from source directory to target directory
     echo "Copying $SOURCE_DIR directory."
-    #cp -R $SOURCE_DIR/. $TARGET_DIR/
-    # DEBUG: Try with 'LICENSE' file first
-    cp -R $SOURCE_DIR/LICENSE $TARGET_DIR/
+    cp -R $SOURCE_DIR/. $TARGET_DIR/
     
     # Commit changes to target repository
     cd target
