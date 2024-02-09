@@ -12,7 +12,9 @@ function l { # Log a message to the terminal.
 gh repo clone sepeliry/point-and-click-homepage ./source
 
 # Define source and target directories (note: target is already cloned in the Action job)
-readonly SOURCE_DIR=./source/deployment
+# DEBUG: Try with 'LICENSE' file first
+readonly SOURCE_DIR=./source
+#readonly SOURCE_DIR=./source/deployment
 readonly TARGET_DIR=./target/beta
 
 # First check that 'deployment' folder exists in source repository
