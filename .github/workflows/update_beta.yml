@@ -1,0 +1,19 @@
+name: Update beta homepage
+on:
+  # Note: comment this out if automatic scheduled updates are not wanted
+  schedule:
+  - cron: '0 0 */1 * *'
+  # Note: this is here so that update can be triggered manually from Actions
+  workflow_dispatch:
+jobs:
+  update-beta:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v3
+        with:
+          path: ./target
+      - name: Run bash script
+        run: bash ./target/.github/scripts/update_beta.sh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
