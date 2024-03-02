@@ -19,7 +19,7 @@ readonly TARGET_DIR=./target/beta
 if [ -d "$SOURCE_DIR" ]; then
     
     # Create directory in target repository
-    mkdir $TARGET_DIR
+    mkdir -p $TARGET_DIR
     
     # Copy contents from source directory to target directory
     echo "Copying $SOURCE_DIR directory."
