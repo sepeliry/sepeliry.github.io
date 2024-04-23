@@ -2,7 +2,8 @@ name: Update beta homepage
 on:
   # Note: comment this out if automatic scheduled updates are not wanted
   schedule:
-  - cron: '0 0 */1 * *'
+  -  cron: '0 * * * *'
+  #- cron: '0 0 */1 * *'
   # Note: this is here so that update can be triggered manually from Actions
   workflow_dispatch:
 jobs:
